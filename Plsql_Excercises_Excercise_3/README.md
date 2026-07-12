@@ -21,7 +21,9 @@ This module focuses on modular database programming using **Oracle PL/SQL Stored
 ### Scenario 3: Secure Inter-Account Fund Transfers
 * **Procedure:** `TransferFunds(p_from_account, p_to_account, p_amount)`
 * **Business Rule:** Facilitates peer-to-peer fund transfers while guaranteeing that the source account maintains sufficient balance prior to transaction execution.
-* **Implementation:** Utilizes `SELECT ... FOR UPDATE` to lock the source account row against concurrent modifications. Evaluates balance sufficiency using conditional logic and raises customized system exceptions (`RAISE_APPLICATION_ERROR`) if funds are insufficient or if an account ID is invalid.
+* **Implementation:** Uses parameterized `VARCHAR2` and `NUMBER` inputs to filter the target department and calculate the percentage increase mathematically:
+  ```text
+  NewSalary = Salary + (Salary * (p_bonus_percentage / 100))
 
 ---
 
