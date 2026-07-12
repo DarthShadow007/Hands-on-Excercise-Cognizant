@@ -1,4 +1,4 @@
-package Excercise_2;
+package Excercise_2_factory_Method_pattern_and_Ecommerce_platform;
 
 class Product {
     int productId;
