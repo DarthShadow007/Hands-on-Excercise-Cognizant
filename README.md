@@ -1,7 +1,7 @@
 # Cognizant Hands-On Exercises — Software Engineering & Database Portfolio
 
 ## 📌 Repository Overview
-Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, **Spring Data JPA & ORM**, and **Oracle PL/SQL Database Administration**.
+Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, **Spring Data JPA & ORM**, **Spring REST & JWT Authentication**, and **Oracle PL/SQL Database Administration**.
 
 Each module is structured as an independent project demonstrating clean coding standards, object-oriented principles, relational database management, and performance optimization techniques.
 
@@ -23,12 +23,13 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`SpringBoot_LibraryManagement`** | **Spring Boot & REST APIs** | Auto-configuration, Spring Data JPA, Embedded H2 Database, RESTful Endpoints (`@RestController`, `@GetMapping`, `@PostMapping`), Embedded Tomcat | `pom.xml`, `application.properties`, `BookController.java` |
 | **`orm-learn`** | **Spring Data JPA & ORM** | Object-Relational Mapping (ORM), `JpaRepository`, Entity Mapping (`@Entity`), H2/MySQL Integration, Data Seeding (`data.sql`), Transaction Management (`@Transactional`) | `pom.xml`, `application.properties`, `Country.java`, `CountryRepository.java`, `CountryService.java`, `OrmLearnApplication.java` |
 | **`HANDSON_4_JPA_VS_HIBERNATE.md`** | **Spring Data JPA & Architecture** | Architectural comparison between JPA (Specification), Hibernate (ORM Provider), and Spring Data JPA (Abstraction Layer) | `HANDSON_4_JPA_VS_HIBERNATE.md` |
+| **`spring-learn`** | **Spring REST & JWT Authentication** | XML Bean Configuration (`@ImportResource`), Spring REST Endpoints (`@RestController`), Stream/Lambda Case-Insensitive Search, Basic Authentication Parsing, Cryptographic JWT Generation (`io.jsonwebtoken`) | `SpringLearnApplication.java`, `CountryController.java`, `CountryService.java`, `AuthenticationController.java`, `SecurityConfig.java`, `country.xml` |
 
 ---
 
 ## 🛠️ Technology Stack & Environment
 * **Languages:** Java (JDK 21) & Oracle PL/SQL
-* **Frameworks:** Spring Core, Spring Boot, Spring WebMVC, Spring Data JPA, Hibernate
+* **Frameworks & Libraries:** Spring Core, Spring Boot, Spring WebMVC, Spring Security, Spring Data JPA, Hibernate, JJWT (`io.jsonwebtoken`)
 * **Build Tool:** Apache Maven (`mvn` / `mvnd`)
 * **Testing Frameworks:** JUnit 5 (Jupiter), Mockito
 * **Databases:** Oracle Database, H2 (In-Memory Embedded Database), MySQL 8.0
@@ -52,6 +53,6 @@ Each module is structured as an independent project demonstrating clean coding s
 
 ### 3. Running Individual Modules
 * **Plain Java Exercises**: Open the driver class containing the `main` method and click the clickable **Run** link appearing directly above the line definition.
-* **Maven-based Unit Testing Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`): Open a terminal inside the specific module folder and run:
+* **Maven-based Unit Testing & Spring Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`, `spring-learn`): Open a terminal inside the specific module folder and run:
   ```bash
   mvn test
