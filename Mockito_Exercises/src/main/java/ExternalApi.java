@@ -1,5 +1,3 @@
-package Mockito_Exercises.src.main.java;
-
 /**
  * Represents a third-party/external API that MyService depends on.
  * In a real application this might make an HTTP call, query a database,
