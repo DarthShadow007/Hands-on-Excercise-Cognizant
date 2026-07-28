@@ -43,7 +43,7 @@ JUnit_Basic_Testing_Exercises/
 
 ## How to Run
 ```bash
-mvn test
+mvnd JUnit_Basic_Testing_Exercises
 ```
 This compiles the project and runs all three test classes. To run a
 single exercise's test class only:
