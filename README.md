@@ -18,6 +18,7 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`Exercise_3_Stored_Procedures`** | **PL/SQL Stored Procedures** | Modular Database Programming, Row-Level Locking (`FOR UPDATE`), Parameterized Procedures, Transaction ACID Control (`COMMIT`/`ROLLBACK`), Custom Exception Handling | `StoredProcedures.sql`, `Test_StoredProcedures.sql`, `README.md` |
 | **`JUnit_Basic_Testing_Exercises`** | **TDD using JUnit5 and Mockito** | JUnit 5 Setup, Assertions (assertEquals, assertTrue, assertNull, etc.), Arrange-Act-Assert Pattern, Test Fixtures (`@BeforeEach`/`@AfterEach`) | `Calculator.java`, `Exercise1_SetupTest.java`, `Exercise3_AssertionsTest.java`, `Exercise4_AAAPatternTest.java` |
 | **`Mockito_Exercises`** | **TDD using JUnit5 and Mockito** | Mocking & Stubbing (`Mockito.mock`, `when().thenReturn()`), Verifying Interactions (`verify()`) | `ExternalApi.java`, `MyService.java`, `Exercise1_MockingAndStubbingTest.java`, `Exercise2_VerifyingInteractionsTest.java` |
+| **`SLF4J_Logging_Exercise_1`** | **Enterprise Logging** | Maven Dependencies (`pom.xml`), SLF4J API, Logback Implementation, Warning & Error Severity Levels | `LoggingExample.java`, `pom.xml` |
 
 ---
 
