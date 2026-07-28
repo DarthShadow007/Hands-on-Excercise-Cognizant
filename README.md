@@ -1,7 +1,7 @@
 # Cognizant Hands-On Exercises — Software Engineering & Database Portfolio
 
 ## 📌 Repository Overview
-Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, and **Oracle PL/SQL Database Administration**.
+Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, and **Oracle PL/SQL Database Administration**.
 
 Each module is structured as an independent project demonstrating clean coding standards, object-oriented principles, relational database management, and performance optimization techniques.
 
@@ -19,15 +19,19 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`JUnit_Basic_Testing_Exercises`** | **TDD using JUnit5 and Mockito** | JUnit 5 Setup, Assertions (assertEquals, assertTrue, assertNull, etc.), Arrange-Act-Assert Pattern, Test Fixtures (`@BeforeEach`/`@AfterEach`) | `Calculator.java`, `Exercise1_SetupTest.java`, `Exercise3_AssertionsTest.java`, `Exercise4_AAAPatternTest.java` |
 | **`Mockito_Exercises`** | **TDD using JUnit5 and Mockito** | Mocking & Stubbing (`Mockito.mock`, `when().thenReturn()`), Verifying Interactions (`verify()`) | `ExternalApi.java`, `MyService.java`, `Exercise1_MockingAndStubbingTest.java`, `Exercise2_VerifyingInteractionsTest.java` |
 | **`SLF4J_Logging_Exercise_1`** | **Enterprise Logging** | Maven Dependencies (`pom.xml`), SLF4J API, Logback Implementation, Warning & Error Severity Levels | `LoggingExample.java`, `pom.xml` |
+| **`Spring_Core_LibraryManagement`** | **Spring Framework (Core)** | Inversion of Control (IoC), Dependency Injection (Constructor & Setter), XML Configuration (`applicationContext.xml`), Bean Lifecycles | `pom.xml`, `BookService.java`, `applicationContext.xml` |
+| **`SpringBoot_LibraryManagement`** | **Spring Boot & REST APIs** | Auto-configuration, Spring Data JPA, Embedded H2 Database, RESTful Endpoints (`@RestController`, `@GetMapping`, `@PostMapping`), Embedded Tomcat | `pom.xml`, `application.properties`, `BookController.java` |
 
 ---
 
 ## 🛠️ Technology Stack & Environment
 * **Languages:** Java (JDK 21) & Oracle PL/SQL
-* **Build Tool:** Apache Maven (`mvn` / `mvnd`) for the JUnit and Mockito modules
+* **Frameworks:** Spring Core, Spring Boot, Spring WebMVC, Spring Data JPA
+* **Build Tool:** Apache Maven (`mvn` / `mvnd`)
 * **Testing Frameworks:** JUnit 5 (Jupiter), Mockito
+* **Databases:** Oracle Database, H2 (In-Memory Embedded Database)
 * **IDE / Editor:** Visual Studio Code (with Microsoft Extension Pack for Java & PL/SQL Syntax Highlighting) / Oracle SQL Developer
-* **Runtime / Engines:** Standard Java Virtual Machine (`java`) & Oracle Database Engine (Oracle Live SQL / SQLFiddle)
+* **Runtime / Engines:** Standard Java Virtual Machine (`java`), Embedded Apache Tomcat, & Oracle Database Engine
 * **Version Control:** Git & GitHub
 
 ---
@@ -36,7 +40,7 @@ Each module is structured as an independent project demonstrating clean coding s
 
 ### 1. Prerequisites
 * **For Java Modules:** Ensure you have the **Java Development Kit (JDK 21)** installed and configured in your system environment variables (`JAVA_HOME` and `PATH`).
-* **For Maven-based Modules (JUnit/Mockito):** Ensure Maven (`mvn`) or Maven Daemon (`mvnd`) is installed and available on your `PATH`.
+* **For Maven-based Modules:** Ensure Maven (`mvn`) or Maven Daemon (`mvnd`) is installed and available on your `PATH`.
 * **For PL/SQL Modules:** Access an Oracle Database environment such as Oracle SQL Developer, [Oracle Live SQL](https://livesql.oracle.com/), or [SQLFiddle](http://sqlfiddle.com).
 
 ### 2. Opening in VS Code
@@ -45,23 +49,7 @@ Each module is structured as an independent project demonstrating clean coding s
 3. Allow the extensions to initialize workspace build paths and syntax highlighting.
 
 ### 3. Running Individual Modules
-* **Plain Java Exercises** (e.g. `Excercise_1_singleton_pattern`, `Excercise_2_factory_Method`, `Excercise_7_financial_forecasting`): Open the driver class containing the `main` method and click the clickable **Run** link appearing directly above the line definition.
+* **Plain Java Exercises**: Open the driver class containing the `main` method and click the clickable **Run** link appearing directly above the line definition.
 * **Maven-based Java Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`): Open a terminal inside the specific module folder and run:
   ```bash
   mvn test
-  ```
-  (or `mvnd test` if using Maven Daemon). Each module's own `README.md` has more detail, including how to run a single test class.
-* **PL/SQL Exercises:** Run `SET SERVEROUTPUT ON;` in your Oracle SQL compiler, execute table creation scripts, and run the `.sql` blocks to view database state updates and console logs.
-
----
-
-## ⚙️ Troubleshooting & VS Code Tips
-* **Java Build Path Errors:** If you encounter `Project missing required source folder` after renaming folders, open the Command Palette (`Ctrl + Shift + P`), select **`Java: Clean Java Language Server Workspace`**, and click **Restart and Delete**.
-* **"Declared package does not match expected package" errors:** VS Code sometimes auto-inserts a `package ...;` line at the top of a new `.java` file based on its folder path. The modules in this repository intentionally use a flat structure with no package declarations — delete any auto-inserted `package ...;` line from the top of a file if this error appears.
-* **`mvn`/`mvnd` command not found in terminal:** Confirm Maven (or Maven Daemon) is on your system `PATH`, then fully close and reopen VS Code so the terminal picks up the updated `PATH`.
-* **PL/SQL Plain Text Display:** If `.sql` files appear without color highlighting, install the **PL/SQL Syntax Highlighting** extension from the VS Code marketplace.
-
----
-
-## 👨‍💻 Author & Attribution
-Developed as part of the **Cognizant Hands-On Technical Training & Engineering Portfolio**.
