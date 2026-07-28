@@ -1,7 +1,7 @@
 # Cognizant Hands-On Exercises — Software Engineering & Database Portfolio
 
 ## 📌 Repository Overview
-Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, and **Oracle PL/SQL Database Administration**.
+Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, **Spring Data JPA & ORM**, and **Oracle PL/SQL Database Administration**.
 
 Each module is structured as an independent project demonstrating clean coding standards, object-oriented principles, relational database management, and performance optimization techniques.
 
@@ -21,15 +21,17 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`SLF4J_Logging_Exercise_1`** | **Enterprise Logging** | Maven Dependencies (`pom.xml`), SLF4J API, Logback Implementation, Warning & Error Severity Levels | `LoggingExample.java`, `pom.xml` |
 | **`Spring_Core_LibraryManagement`** | **Spring Framework (Core)** | Inversion of Control (IoC), Dependency Injection (Constructor & Setter), XML Configuration (`applicationContext.xml`), Bean Lifecycles | `pom.xml`, `BookService.java`, `applicationContext.xml` |
 | **`SpringBoot_LibraryManagement`** | **Spring Boot & REST APIs** | Auto-configuration, Spring Data JPA, Embedded H2 Database, RESTful Endpoints (`@RestController`, `@GetMapping`, `@PostMapping`), Embedded Tomcat | `pom.xml`, `application.properties`, `BookController.java` |
+| **`orm-learn`** | **Spring Data JPA & ORM** | Object-Relational Mapping (ORM), `JpaRepository`, Entity Mapping (`@Entity`), H2/MySQL Integration, Data Seeding (`data.sql`), Transaction Management (`@Transactional`) | `pom.xml`, `application.properties`, `Country.java`, `CountryRepository.java`, `CountryService.java`, `OrmLearnApplication.java` |
+| **`HANDSON_4_JPA_VS_HIBERNATE.md`** | **Spring Data JPA & Architecture** | Architectural comparison between JPA (Specification), Hibernate (ORM Provider), and Spring Data JPA (Abstraction Layer) | `HANDSON_4_JPA_VS_HIBERNATE.md` |
 
 ---
 
 ## 🛠️ Technology Stack & Environment
 * **Languages:** Java (JDK 21) & Oracle PL/SQL
-* **Frameworks:** Spring Core, Spring Boot, Spring WebMVC, Spring Data JPA
+* **Frameworks:** Spring Core, Spring Boot, Spring WebMVC, Spring Data JPA, Hibernate
 * **Build Tool:** Apache Maven (`mvn` / `mvnd`)
 * **Testing Frameworks:** JUnit 5 (Jupiter), Mockito
-* **Databases:** Oracle Database, H2 (In-Memory Embedded Database)
+* **Databases:** Oracle Database, H2 (In-Memory Embedded Database), MySQL 8.0
 * **IDE / Editor:** Visual Studio Code (with Microsoft Extension Pack for Java & PL/SQL Syntax Highlighting) / Oracle SQL Developer
 * **Runtime / Engines:** Standard Java Virtual Machine (`java`), Embedded Apache Tomcat, & Oracle Database Engine
 * **Version Control:** Git & GitHub
@@ -50,6 +52,6 @@ Each module is structured as an independent project demonstrating clean coding s
 
 ### 3. Running Individual Modules
 * **Plain Java Exercises**: Open the driver class containing the `main` method and click the clickable **Run** link appearing directly above the line definition.
-* **Maven-based Java Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`): Open a terminal inside the specific module folder and run:
+* **Maven-based Unit Testing Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`): Open a terminal inside the specific module folder and run:
   ```bash
   mvn test
