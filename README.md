@@ -1,9 +1,9 @@
 # Cognizant Hands-On Exercises — Software Engineering & Database Portfolio
 
 ## 📌 Repository Overview
-Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, **Spring Data JPA & ORM**, **Spring REST & JWT Authentication**, and **Oracle PL/SQL Database Administration**.
+Welcome to the **Cognizant Hands-On Exercises Repository**! This repository serves as a comprehensive portfolio of practical software engineering and database programming assignments designed to master **Core Java**, **Creational Design Patterns**, **Data Structures & Algorithms**, **Recursive Mathematical Modeling**, **Test-Driven Development (TDD) with JUnit5 & Mockito**, **Enterprise Spring Framework (Core & Boot)**, **Spring Data JPA & ORM**, **Spring REST & JWT Authentication**, **Oracle PL/SQL Database Administration**, **Frontend UI Development with React.js**, and **Version Control with Git**.
 
-Each module is structured as an independent project demonstrating clean coding standards, object-oriented principles, relational database management, and performance optimization techniques.
+Each module is structured as an independent project demonstrating clean coding standards, object-oriented principles, relational database management, and modern component-based frontend architecture.
 
 ---
 
@@ -26,18 +26,30 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`spring-learn`** | **Spring REST & JWT Authentication** | XML Bean Configuration (`@ImportResource`), Spring REST Endpoints (`@RestController`), Stream/Lambda Case-Insensitive Search, Basic Authentication Parsing, Cryptographic JWT Generation (`io.jsonwebtoken`) | `SpringLearnApplication.java`, `CountryController.java`, `CountryService.java`, `AuthenticationController.java`, `SecurityConfig.java`, `country.xml` |
 | **`microservices/account`** | **Microservices Architecture** | Independent Spring Boot REST service for bank accounts (`GET /accounts/{number}` on port `8080`) | `AccountApplication.java`, `AccountController.java`, `application.properties` |
 | **`microservices/loan`** | **Microservices Architecture** | Independent Spring Boot REST service for bank loans (`GET /loans/{number}` on port `8081`) | `LoanApplication.java`, `LoanController.java`, `application.properties` |
+| **`myfirstreact`** | **React Fundamentals** | Environment Setup, JSX syntax, Functional Components, Initial Rendering | `App.js`, `index.js` |
+| **`studentapp`** | **React Components** | Class & Function Components, Props, Data Passing | `App.js`, `README.md` |
+| **`scorecalculatorapp`** | **React State** | State Management, Conditional Logic, Dynamic UI Updates | `App.js`, `README.md` |
+| **`officespacerentalapp`** | **React Rendering** | Conditional Rendering, UI Layouts | `App.js`, `README.md` |
+| **`cricketapp`** | **ES6 in React** | Arrays, `.map()`, `.filter()`, List Rendering | `App.js`, `README.md` |
+| **`eventexamplesapp`** | **React Events** | Event Handling, User Interactions, Synthetic Events | `App.js`, `README.md` |
+| **`counterstateapp`** | **React Hooks** | `useState` Hook, Component State Lifecycles | `App.js`, `README.md` |
+| **`currencyconverterapp`** | **React Logic** | State Management, Real-time Calculations, Controlled Inputs | `App.js`, `README.md` |
+| **`ticketbookingapp`** | **React Forms** | Form Handling, Controlled Components, Form Validation | `App.js`, `README.md` |
+| **`taskmanagerapp`** | **React CRUD** | State Arrays, Create/Read/Update/Delete (CRUD) Operations | `App.js`, `README.md` |
+| **`GitDemo`** | **Version Control (Git)** | Git Configuration, `.gitignore` File Tracking, Branching & Merging, 3-Way Merge Conflict Resolution | `welcome.txt`, `.gitignore`, `hello.xml` |
 
 ---
 
 ## 🛠️ Technology Stack & Environment
-* **Languages:** Java (JDK 21) & Oracle PL/SQL
-* **Frameworks & Libraries:** Spring Core, Spring Boot, Spring WebMVC, Spring Security, Spring Data JPA, Hibernate, JJWT (`io.jsonwebtoken`)
-* **Build Tool:** Apache Maven (`mvn` / `mvnd`)
+* **Languages:** Java (JDK 21), JavaScript (ES6+), & Oracle PL/SQL
+* **Frontend Frameworks:** React.js
+* **Backend Frameworks & Libraries:** Spring Core, Spring Boot, Spring WebMVC, Spring Security, Spring Data JPA, Hibernate, JJWT (`io.jsonwebtoken`)
+* **Build Tools & Package Managers:** Apache Maven (`mvn` / `mvnd`), Node Package Manager (`npm`)
 * **Testing Frameworks:** JUnit 5 (Jupiter), Mockito
 * **Databases:** Oracle Database, H2 (In-Memory Embedded Database), MySQL 8.0
-* **IDE / Editor:** Visual Studio Code (with Microsoft Extension Pack for Java & PL/SQL Syntax Highlighting) / Oracle SQL Developer
-* **Runtime / Engines:** Standard Java Virtual Machine (`java`), Embedded Apache Tomcat, & Oracle Database Engine
-* **Version Control:** Git & GitHub
+* **IDE / Editor:** Visual Studio Code (with Microsoft Extension Pack for Java & PL/SQL Syntax Highlighting) / Oracle SQL Developer / Notepad++
+* **Runtime / Engines:** Standard Java Virtual Machine (`java`), Node.js, Embedded Apache Tomcat, & Oracle Database Engine
+* **Version Control & Terminal:** Git, GitHub, Windows PowerShell / Git Bash
 
 ---
 
@@ -46,7 +58,9 @@ Each module is structured as an independent project demonstrating clean coding s
 ### 1. Prerequisites
 * **For Java Modules:** Ensure you have the **Java Development Kit (JDK 21)** installed and configured in your system environment variables (`JAVA_HOME` and `PATH`).
 * **For Maven-based Modules:** Ensure Maven (`mvn`) or Maven Daemon (`mvnd`) is installed and available on your `PATH`.
+* **For React Modules:** Ensure **Node.js** and **npm** are installed. 
 * **For PL/SQL Modules:** Access an Oracle Database environment such as Oracle SQL Developer, [Oracle Live SQL](https://livesql.oracle.com/), or [SQLFiddle](http://sqlfiddle.com).
+* **For Git Modules:** Ensure Git is installed and configured in your terminal environment.
 
 ### 2. Opening in VS Code
 1. Clone or download this repository to your local machine.
@@ -58,3 +72,6 @@ Each module is structured as an independent project demonstrating clean coding s
 * **Maven-based Unit Testing & Spring Exercises** (`JUnit_Basic_Testing_Exercises`, `Mockito_Exercises`, `spring-learn`): Open a terminal inside the specific module folder and run:
   ```bash
   mvn test
+
+  ✍️ Author
+Mohd Bashar
