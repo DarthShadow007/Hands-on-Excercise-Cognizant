@@ -24,6 +24,8 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`orm-learn`** | **Spring Data JPA & ORM** | Object-Relational Mapping (ORM), `JpaRepository`, Entity Mapping (`@Entity`), H2/MySQL Integration, Data Seeding (`data.sql`), Transaction Management (`@Transactional`) | `pom.xml`, `application.properties`, `Country.java`, `CountryRepository.java`, `CountryService.java`, `OrmLearnApplication.java` |
 | **`HANDSON_4_JPA_VS_HIBERNATE.md`** | **Spring Data JPA & Architecture** | Architectural comparison between JPA (Specification), Hibernate (ORM Provider), and Spring Data JPA (Abstraction Layer) | `HANDSON_4_JPA_VS_HIBERNATE.md` |
 | **`spring-learn`** | **Spring REST & JWT Authentication** | XML Bean Configuration (`@ImportResource`), Spring REST Endpoints (`@RestController`), Stream/Lambda Case-Insensitive Search, Basic Authentication Parsing, Cryptographic JWT Generation (`io.jsonwebtoken`) | `SpringLearnApplication.java`, `CountryController.java`, `CountryService.java`, `AuthenticationController.java`, `SecurityConfig.java`, `country.xml` |
+| **`microservices/account`** | **Microservices Architecture** | Independent Spring Boot REST service for bank accounts (`GET /accounts/{number}` on port `8080`) | `AccountApplication.java`, `AccountController.java`, `application.properties` |
+| **`microservices/loan`** | **Microservices Architecture** | Independent Spring Boot REST service for bank loans (`GET /loans/{number}` on port `8081`) | `LoanApplication.java`, `LoanController.java`, `application.properties` |
 
 ---
 
