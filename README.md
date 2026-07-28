@@ -73,5 +73,5 @@ Each module is structured as an independent project demonstrating clean coding s
   ```bash
   mvn test
 
-  ✍️ Author
+✍️ Author
 Mohd Bashar
