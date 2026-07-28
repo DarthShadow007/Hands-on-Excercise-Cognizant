@@ -16,6 +16,7 @@ Each module is structured as an independent project demonstrating clean coding s
 | **`Excercise_7_financial_forecasting`** | **Algorithms & Mathematical Modeling** | Recursive Compounding Algorithms, Time/Space Complexity Analysis, Memoization (`HashMap` Caching) | `FinancialForecasting.java` |
 | **`Plsql_Excercises_Excercise_1`** | **PL/SQL Control Structures** | Explicit Cursors, Cursor FOR Loops, Conditional `IF-THEN` Business Logic, Server Output Logging | `ControlStructures.sql`, `README.md` |
 | **`Exercise_3_Stored_Procedures`** | **PL/SQL Stored Procedures** | Modular Database Programming, Row-Level Locking (`FOR UPDATE`), Parameterized Procedures, Transaction ACID Control (`COMMIT`/`ROLLBACK`), Custom Exception Handling | `StoredProcedures.sql`, `Test_StoredProcedures.sql`, `README.md` |
+| **`JUnit_Basic_Testing_Exercises`** | **TDD using JUnit5 and Mockito** | JUnit 5 Setup, Assertions (assertEquals, assertTrue, assertNull, etc.), Arrange-Act-Assert Pattern, Test Fixtures (`@BeforeEach`/`@AfterEach`) | `Calculator.java`, `Exercise1_SetupTest.java`, `Exercise3_AssertionsTest.java`, `Exercise4_AAAPatternTest.java` |
 
 ---
 
